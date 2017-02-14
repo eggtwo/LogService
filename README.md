@@ -18,8 +18,7 @@
  # 测试代码如下
  
  
- 
-     static void LogWriteTest()
+   static void LogWriteTest()
         {
             Stopwatch sw = new Stopwatch();
             sw.Start();
@@ -47,3 +46,7 @@
                 LogServiceHelper.Intance.Write("测试" + tag, i + "测试测试测试测试测试", "sa");
             }
         }
+
+ 
+ 
+     
