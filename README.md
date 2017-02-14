@@ -16,7 +16,13 @@
  
  # 测试代码如下
  
-        static void LogWriteTest()
+       static void Main(string[] args)
+        {
+            string dir= Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log/");
+            LogServiceHelper.Intance.Start(dir);
+            LogWriteTest();
+        }
+       static void LogWriteTest()
         {
             Stopwatch sw = new Stopwatch();
             sw.Start();
